@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <Title>Registration Form</Title>
+</head>
+<body>
+    <h1>Create an account</h1>
+    <form action="index.html" method="GET">
+        <fieldset>
+                <legend>Personal</legend>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Full Name" required>
+               
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday" required>
+        
+                <label for="animal">Favorite animal</label>
+                <input type="text" name="animal" id="animal" placeholder="Your favorite animal">
+        </fieldset>
+        <fieldset>
+            <legend>Account</legend>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="youremail@mail.com" required > 
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" 
+            placeholder="Please enter a password" required pattern="\S\w{4,15}" 
+            title="5 to 15 characters, no spaces or special characters allowed">
+
+            <label for="password">Verify Password</label>
+            <input type="password" name="password" id="password" placeholder="Repeat the password" required>
+        </fieldset>
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address">
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country">
+
+            <label for="phone_number">Phone number</label>
+            <input type="tel" name="phone_number" id="phone_number" required >
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
